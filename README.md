@@ -2,6 +2,10 @@
 
 A meaningful, full-stack web application designed for community event management and volunteer coordination.
 
+## 🔗 Live Demo Links
+- **Frontend (Vercel)**: [INSERT_YOUR_VERCEL_URL_HERE]
+- **Backend (Render)**: [INSERT_YOUR_RENDER_URL_HERE]
+
 ## Tech Stack
 - **Frontend**: React (Vite)
 - **Backend**: Strapi CMS (Headless)
@@ -88,5 +92,3 @@ Open `http://localhost:5173` to view the app.
 - `POST /api/volunteers`: Submit a volunteer application.
   - Payload: `{ "data": { "name": "...", "email": "...", "phone": "..." } }`
 
----
-Built with ❤️ by Antigravity.
