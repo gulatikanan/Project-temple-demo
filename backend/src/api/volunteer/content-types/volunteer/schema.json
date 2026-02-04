@@ -1,0 +1,33 @@
+{
+    "kind": "collectionType",
+    "collectionName": "volunteers",
+    "info": {
+        "singularName": "volunteer",
+        "pluralName": "volunteers",
+        "displayName": "Volunteer",
+        "description": "Community volunteers"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true
+        },
+        "email": {
+            "type": "email",
+            "required": true
+        },
+        "phone": {
+            "type": "string"
+        },
+        "message": {
+            "type": "text"
+        },
+        "eventInterest": {
+            "type": "string"
+        }
+    }
+}
