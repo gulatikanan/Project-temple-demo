@@ -1,16 +1,72 @@
-# React + Vite
+# TempleHub Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The client-side application for TempleHub, built with **React** and **Vite**. It provides a premium, responsive interface for community members to browse events and sign up as volunteers.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+**Frontend URL**: [INSERT_YOUR_VERCEL_URL_HERE]  
+*(e.g., https://templehub.vercel.app)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🛠 Features
+- **Modern UI/UX**:
+  - Built with a custom "Serene & Spiritual" design system (CSS Variables).
+  - Responsive Grid Layouts for events.
+  - Glassmorphism effects in navigation.
+- **Event Management**:
+  - Dynamic Event Listing fetching data from Strapi.
+  - "Spots Left" calculator for volunteers.
+  - Fallback mechanism: Automatically switches to Mock Data if the backend is unreachable.
+- **Volunteer System**:
+  - Integrated Signup Form.
+  - Client-side validation.
+  - Direct submission to Strapi API.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 💻 Local Development
 
-## Expanding the ESLint configuration
+### Prerequisites
+- Node.js v18+.
+- NPM or Yarn.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+1.  Navigate to the directory:
+    ```bash
+    cd frontend
+    ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+3.  Configure Environment:
+    ```bash
+    cp .env.example .env
+    ```
+    Edit `.env` and set `VITE_API_URL` to your backend (or local) URL:
+    ```
+    VITE_API_URL=http://localhost:1337
+    # OR for production:
+    # VITE_API_URL=https://backend-temple.onrender.com
+    ```
+4.  Start the development server:
+    ```bash
+    npm run dev
+    ```
+5.  Open `http://localhost:5173`.
+
+---
+
+## ☁️ Deployment (Vercel)
+
+1.  Push this code to GitHub.
+2.  Go to [Vercel](https://vercel.com) and "Add New Project".
+3.  **Import** the `Project-temple-demo` repository.
+4.  **Framework Preset**: Vite (Auto-detected).
+5.  **Root Directory**: Click "Edit" and select `frontend`. **(Crucial Step!)**
+6.  **Environment Variables**:
+    - `VITE_API_URL`: `https://backend-temple.onrender.com` (Your live backend)
+7.  Click **Deploy**.
+
+## 📂 Project Structure
+- `src/components`: Reusable UI components (Navbar, Hero, EventList, VolunteerForm).
+- `src/data`: Contains `mockData.js` for offline/fallback mode.
+- `src/index.css`: Global design system and variables.
