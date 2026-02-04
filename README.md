@@ -3,8 +3,7 @@
 A meaningful, full-stack web application designed for community event management and volunteer coordination.
 
 ## 🔗 Live Demo Links
-- **Frontend (Vercel)**: [INSERT_YOUR_VERCEL_URL_HERE]
-- **Backend (Render)**: [INSERT_YOUR_RENDER_URL_HERE]
+- **Backend (Render)**: https://backend-temple.onrender.com
 
 ## Tech Stack
 - **Frontend**: React (Vite)

@@ -3,10 +3,10 @@
 This is the backend for the TempleHub application, built with **Strapi v5** (Headless CMS). It provides the API for managing Events, Volunteers, and other content consumed by the Frontend.
 
 ## 🚀 Live Demo
-**Backend API URL**: [INSERT_YOUR_RENDER_URL_HERE]  
+**Backend API URL**: https://backend-temple.onrender.com
 *(e.g., https://templehub-backend.onrender.com)*
 
-**Admin Panel**: [INSERT_YOUR_RENDER_URL_HERE]/admin
+**Admin Panel**: https://backend-temple.onrender.com/admin
 
 ---
 
